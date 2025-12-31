@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Quiz Challenge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-vignette"></div>
+<div class="timer-bar">
+    <div class="container" id="main-box">
+    <div id="quiz-app">
+        <div class="timer-container">
+            <div id="timer-line"></div>
+        </div>
+
+        <div class="header">
+            <span id="progress">Soal 1 dari 10</span>
+            <div class="score-badge">Skor: <span id="current-score">0</span></div>
+        </div>
+
+        <h2 id="question" class="animate__animated">Memuat...</h2>
+        <div id="options-container"></div>
+        <button id="next-btn" class="hide">Lanjut →</button>
+    </div>
+
+    <div id="result-screen" class="hide animate__animated animate__fadeIn">
+        <div class="icon-cup">🏆</div>
+        <h2>Selesai!</h2>
+        <p id="final-score"></p>
+        <button onclick="location.reload()" class="restart-btn">Main Lagi</button>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
